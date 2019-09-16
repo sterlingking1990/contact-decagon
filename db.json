@@ -1,0 +1,46 @@
+{
+    "contacts":[
+        {
+            "id":1,
+            "title":"mr",
+            "firstName":"John",
+            "lastName":"Doe",
+            "phoneNumber":08066882932
+        },
+        {
+            "id": 2,
+            "title": "mrs",
+            "firstName": "Chidi",
+            "lastName": "Nwoke",
+            "phoneNumber": 08033382932
+        },
+        {
+            "id": 3,
+            "title": "mr",
+            "firstName": "Chidi",
+            "lastName": "Dibia",
+            "phoneNumber": 0805555932
+        },
+        {
+            "id": 4,
+            "title": "mrs",
+            "firstName": "Paul",
+            "lastName": "Bode",
+            "phoneNumber": 08029390902
+        },
+        {
+            "id": 5,
+            "title": "mr",
+            "firstName": "James",
+            "lastName": "Penny",
+            "phoneNumber": "08099990902"
+        },
+        {
+            "id": 6,
+            "title": "mrs",
+            "firstName": "Chima",
+            "lastName": "Amai",
+            "phoneNumber": "08023230902"
+        }
+    ]
+}

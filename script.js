@@ -5,6 +5,21 @@ const getContact=async()=>{
     const contacts=await response.json();
 
     populateContacts(contacts);
+
+    const editContacts = document.querySelectorAll("#edit");
+    const deleteContacts = document.querySelectorAll("#delete");
+
+    editContacts.forEach(button => button.addEventListener('click', () => {
+        console.log("edit");
+    })
+    );
+
+    deleteContacts.forEach(button => button.addEventListener('click', () => {
+        console.log("delete");
+    })
+    );
+
+
 };
 
 const populateContacts=contacts=>{
@@ -22,8 +37,8 @@ const formatContact=({firstName,lastName,phoneNumber})=>{
         <div>${phoneNumber}</div>
 
         <div class'edit-contact'>
-            <button id='edit'>Edit</button>
-            <button id='delete'>Delete</button>
+            <button id='edit-'${id}>Edit</button>
+            <button id='delete-'${id}>Delete</button>
         </div>
     </div>`;
 
@@ -31,20 +46,11 @@ const formatContact=({firstName,lastName,phoneNumber})=>{
 
 //get buttons actions from page and register event listeners
 
-const editContacts = document.querySelectorAll("#edit");
-const deleteContacts = document.querySelectorAll("#delete");
+
 
 //register button actions
 
-editContacts.forEach(button=>button.addEventListener('click',()=>{
-   console.log("edit");
-})
-);
 
-deleteContacts.forEach(button => button.addEventListener('click', () => {
-    console.log("delete");
-})
-);
 
 $(document).ready(getContact);
 
